@@ -1,5 +1,5 @@
 class Task
-  attr_reader :id, :title, :content
+  attr_reader :id
 
   @@count = 0
 
@@ -10,6 +10,6 @@ class Task
   end
 
   def info
-    puts "[#{id}] #{title}:#{content}"
+    "[No.#{id}] #{@title}:#{@content}"
   end
 end
